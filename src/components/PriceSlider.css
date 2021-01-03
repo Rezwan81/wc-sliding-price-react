@@ -42,7 +42,7 @@
 
   /* Firefox */
     .slideBlock input[type=range]::-moz-range-thumb {
-        z-index: 999;
+        z-index: 99;
         position: relative;
         border: 2px solid #fff;
         height: 47px;

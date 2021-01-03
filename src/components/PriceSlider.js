@@ -3,13 +3,13 @@ import './PriceSlider.css';
 
 const PriceSlider = () => {
     // price hook
-    const [price, setPrice] = useState('100');
+    const [price, setPrice] = useState('150');
 
     return (
         <>
             <div className="slideBlock">
             <div className="strack"></div>
-            <div className="slideProgress" style={{"width": price + "px"}}></div>
+            <div className="slideProgress" style={{"width": (price/400*100) + "%"}}></div>
                 <input
                     onChange={(e) => setPrice(
                         e.target.value >= 100 && e.target.value <= 400 ? e.target.value : '100'
